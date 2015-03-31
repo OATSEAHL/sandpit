@@ -19,9 +19,11 @@ To install using composer create a **composer.json** in the installation directo
 }
 ```
 then navigate to the directory you want to install Sandpit into and (assuming Composer is installed) at the command prompt type the commmand:
+```
     $ composer install
-
+```
 to update the installation at a latter date:
+```
     $ composer update
-
+```
 **THE END!**
