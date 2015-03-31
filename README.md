@@ -1,4 +1,4 @@
-OATSEA Sandpit
+OATSEA Sandpit [UPDATED]
 =======
 
 A test Symfony project created on March 31, 2015, 3:15 am to test basic Symfony configuration and the ability to use composer to do uptdates and installation.
