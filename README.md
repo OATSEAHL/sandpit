@@ -1,4 +1,4 @@
-# sandpit
-OATSEA Sandpit
+sandpit
+=======
 
-This is just a sandpit repository for testing 
+A Symfony project created on March 31, 2015, 3:14 am.
