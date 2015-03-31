@@ -39,5 +39,17 @@ $ HTTPDUSER=`ps aux | grep -E '[a]pache|[h]ttpd|[_]www|[w]ww-data|[n]ginx' | gre
 $ sudo chmod +a "$HTTPDUSER allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs
 $ sudo chmod +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs
 ```
+on a Raspberry Pi needed to install ACL first 
+```
+apt-get install ACL
+```
+
+and then:
+```
+rm -rf app/cache/*
+rm -rf app/logs/*
+sudo setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs
+sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs
+```
 
 **THE END!**
